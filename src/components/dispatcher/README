@@ -1,0 +1,52 @@
+文件业务相关
+.
+├── arrive                          到站收货
+│   ├── index.jsx
+│   └── style.less
+├── core
+│   ├── basic.jsx                   废弃模块
+│   ├── detail.jsx                  废弃模块
+│   ├── enumerate.js                枚举值文件
+│   ├── header.jsx                  配送站与统计数据模块
+│   ├── inboundOrder.jsx            插入表单模块
+│   ├── orderDetails.jsx            仓订单详情模块
+│   ├── scanOrder.jsx               核心逻辑功能模块
+│   ├── search.jsx                  查询模块
+│   ├── style.less
+│   ├── table.jsx                   列表模块
+│   └── trace.jsx                   废弃模块
+├── distributionOrder               配送单查询模块
+│   ├── index.jsx
+│   └── style.less
+├── exceptionOrder                  异常单处理模块
+│   ├── index.jsx
+│   └── style.less
+├── knightAffirmOrder               待骑士确认订单模块
+│   ├── index.jsx
+│   └── style.less  
+├── knightDelivery                  废弃模块
+│   ├── index.jsx
+│   └── style.less
+├── operateRecord                   操作记录模块
+│   ├── inboundRecord.jsx           进站记录
+│   ├── index.jsx
+│   ├── outboundRecord.jsx          出站记录
+│   ├── search.jsx                  查询模块
+│   ├── style.less
+│   └── table.jsx                   列表模块
+├── pullin                          揽收入站模块
+│   ├── index.jsx
+│   └── style.less
+├── salesInbound                    退货入站模块
+│   ├── index.jsx
+│   └── style.less
+├── salesOutbound                   废弃模块
+│   ├── index.jsx
+│   └── style.less
+├── transfer                        中转出站模块
+│   ├── index.jsx
+│   └── style.less
+└── transferOrder                   中转单查询模块
+    ├── details.jsx
+    ├── index.jsx
+    └── style.less

@@ -1,0 +1,171 @@
+.
+├── dist                                       编译生成的文件
+│   └── images                                 编译生成的图片资源
+│       ├── business                           帮助中心/业务指南部分图片
+│       └── new                                帮助中心/新手指南部分图片
+├── doc                                        说明文档
+├── images                                     图片资源
+│   ├── business                               帮助中心/业务指南部分图片
+│   └── new                                    帮助中心/新手指南部分图片
+├── mock                                       虚拟数据mock对象
+│   └── mockDatas                              虚拟数据
+├── src                                        源码目录
+│   ├── application                            全局初始化、权限、资源判断
+│   │   ├── define                             数据类型定义
+│   │   ├── library                            封装的通用库函数（通知，存储）
+│   │   ├── object                             dataMapper数据对象
+│   │   └── service                            服务相关
+│   │       ├── geography                      地理位置信息
+│   │       │   └── assets                     地理位置列表
+│   │       └── router                         用户路由权限判断
+│   ├── components                             组件
+│   │   ├── account                            个人账户
+│   │   │   ├── authorize                      登陆注册
+│   │   │   ├── profile                        账户信息
+│   │   │   └── vendor                         服务商信息
+│   │   ├── business                           业务中心
+│   │   │   ├── area                           配送区域管理
+│   │   │   │   └── components                 区域组件
+│   │   │   │       └── map                    地图相关
+│   │   │   ├── project                        项目管理
+│   │   │   │   ├── affiliate                  加盟
+│   │   │   │   │   └── operate                操作
+│   │   │   │   ├── core                       功能封装
+│   │   │   │   └── direct                     直营
+│   │   │   │       └── operate                操作
+│   │   │   ├── rules                          规则管理
+│   │   │   │   ├── area                       区域规则
+│   │   │   │   └── stock                      仓库规则
+│   │   │   ├── service                        服务产品设置
+│   │   │   │   ├── core                       核心组件封装
+│   │   │   │   └── detail                     服务产品详情
+│   │   │   ├── stock                          仓库管理
+│   │   │   │   └── core                       核心组件封装
+│   │   │   └── supplier                       承运商管理
+│   │   │       ├── core                       核心组件封装
+│   │   │       └── operate                    操作
+│   │   ├── common                             公共组件
+│   │   │   └── interface                      界面
+│   │   │       └── components                 搜索框
+│   │   ├── core
+│   │   ├── dispatcher                         分拨管理
+│   │   │   ├── arrive                         到站收货
+│   │   │   ├── core                           核心组件封装
+│   │   │   ├── distributionOrder              配送单查询模块
+│   │   │   ├── exceptionOrder                 异常单处理模块
+│   │   │   ├── knightAffirmOrder              待骑士确认订单模块
+│   │   │   ├── knightDelivery                 废弃模块
+│   │   │   ├── operateRecord                  操作记录模块
+│   │   │   ├── pullin                         揽收入站模块
+│   │   │   ├── salesInbound                   退货入站模块
+│   │   │   ├── salesOutbound                  废弃模块
+│   │   │   ├── transfer                       中转出站模块
+│   │   │   └── transferOrder                  中转单查询模块
+│   │   ├── interface                          界面
+│   │   │   ├── components
+│   │   │   │   ├── breadcrumb                 面包屑
+│   │   │   │   ├── guide                      指南
+│   │   │   │   └── notFind
+│   │   │   ├── header
+│   │   │   ├── layout
+│   │   │   └── silder
+│   │   ├── operations                         运营管理
+│   │   │   └── search
+│   │   └── order                              订单管理
+│   │       ├── core                           订单明细
+│   │       │   ├── board
+│   │       │   └── exception
+│   │       ├── download                       下载
+│   │       ├── exceptionOrder                 异常订单
+│   │       ├── orderBoard                     订单看板
+│   │       └── orderInquiry                   订单查询
+│   ├── models
+│   │   ├── account
+│   │   ├── business
+│   │   │   ├── project
+│   │   │   └── supplier
+│   │   ├── core
+│   │   ├── dispatcher
+│   │   ├── operations
+│   │   └── order
+│   ├── routes                                 路由
+│   │   └── core                               路由配置
+│   ├── services                               产品与服务
+│   │   ├── business
+│   │   │   └── src
+│   │   │       ├── models
+│   │   │       ├── pages
+│   │   │       │   ├── manage
+│   │   │       │   │   └── components
+│   │   │       │   └── seller
+│   │   │       │       └── list
+│   │   │       └── services
+│   │   ├── finance                           财务中心
+│   │   │   ├── mock                          模拟数据
+│   │   │   │   └── mockDatas
+│   │   │   └── src
+│   │   │       ├── models
+│   │   │       └── pages
+│   │   │           └── sellerBills
+│   │   │               └── list
+│   │   ├── guide                             帮助中心
+│   │   │   └── pages                         帮助中心
+│   │   ├── operation                         订单管理
+│   │   │   └── src
+│   │   │       ├── models
+│   │   │       ├── pages
+│   │   │       │   ├── close
+│   │   │       │   │   └── components
+│   │   │       │   ├── order
+│   │   │       │   │   └── components
+│   │   │       │   └── seller
+│   │   │       └── services
+│   │   ├── statictics                        数据统计
+│   │   │   ├── mock
+│   │   │   │   └── mockDatas
+│   │   │   └── src
+│   │   │       ├── models
+│   │   │       └── pages
+│   │   │           ├── compass
+│   │   │           ├── monito
+│   │   │           ├── shipments_area
+│   │   │           │   └── list
+│   │   │           ├── shipments_courier
+│   │   │           │   └── list
+│   │   │           ├── shipments_detail
+│   │   │           │   └── list
+│   │   │           ├── shipments_detail_down
+│   │   │           │   └── list
+│   │   │           └── shipments_seller
+│   │   │               └── list
+│   │   ├── team                              用户管理
+│   │   │   ├── mock                          模拟数据
+│   │   │   │   └── mockDatas                 模拟数据
+│   │   │   └── src
+│   │   │       ├── models
+│   │   │       └── pages
+│   │   │           ├── courier
+│   │   │           │   ├── list
+│   │   │           │   └── style
+│   │   │           └── employee
+│   │   │               ├── list
+│   │   │               └── style
+│   │   └── tms                               运力调度
+│   │       ├── mock
+│   │       │   └── mockDatas
+│   │       └── src
+│   │           ├── models
+│   │           ├── pages
+│   │           │   └── control_panel
+│   │           └── services
+│   ├── submodules                            方法子模块
+│   │   └── aoao-core-api-service -> /Users/rcwh/Develop/aoao-apps-vendor/./.bin/../../aoao-core-api-service
+│   └── utils                                 工具类
+└── test                                      测试
+    ├── app
+    │   └── library
+    └── helpers
+        ├── localStorage
+        └── sessionStorage
+
+168 directories

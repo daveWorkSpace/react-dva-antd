@@ -1,0 +1,46 @@
+order
+├── README
+├── core
+│   ├── ActionName.js
+│   ├── basic.jsx                   废弃模块
+│   ├── board                       订单看板模块
+│   │   ├── iconStatistics.jsx      统计图表模块
+│   │   ├── search.jsx              查询模块
+│   │   ├── style.less
+│   │   └── table.jsx               列表模块
+│   ├── detail.jsx                  废弃模块
+│   ├── enumerate.js                枚举模块
+│   ├── exception                   废弃模块
+│   │   ├── city.jsx
+│   │   ├── order.js
+│   │   ├── search.jsx
+│   │   ├── style.less
+│   │   └── table.jsx
+│   ├── exports.js
+│   ├── orderDetails.jsx            订单详情模块（整个订单管理模块凡是涉及到订单详情都是这个文件）
+│   ├── style.less
+│   └── trace.jsx                    废弃模块
+├── download                        订单明细模块
+│   ├── daily.jsx                   日订单明细
+│   ├── monthly.jsx                 月订单明细
+│   ├── search.jsx                  查询组件
+│   ├── style.less
+│   └── table.jsx                   table 组件
+├── exceptionOrder                  异常单模块
+│   ├── affiliate.jsx               加盟
+│   ├── affiliateDetail.jsx         废弃模块
+│   ├── direct.jsx                  直营
+│   ├── directDetail.jsx            废弃模块
+│   └── style.less
+├── orderBoard                      订单看板
+│   ├── affiliate.jsx               加盟
+│   ├── affiliateDetail.jsx         废弃模块
+│   ├── direct.jsx                  直营
+│   ├── directDetail.jsx            废弃模块
+│   └── style.less
+└── orderInquiry                    订单查询模块
+    ├── ActionsName.js
+    ├── index.jsx
+    ├── search.jsx                  查询模块
+    ├── style.less
+    └── table.jsx                   列表模块

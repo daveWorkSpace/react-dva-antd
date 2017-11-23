@@ -1,0 +1,39 @@
+const data = [
+  {
+    "id":"82hdfwr2r9dshif92",
+    "vendor_id":"87654",
+    "day":"2016-10-23T09:39:41.966000+00:00",
+    "total":"200",
+    "done_count":'45',
+    "closed_count":'56',
+    "file_name":'23'
+  },
+  {
+    "id":"22",
+    "vendor_id":"87654",
+    "day":"2016-10-23T09:39:41.966000+00:00",
+    "total":"200",
+    "done_count":'45',
+    "closed_count":'56',
+    "file_name":'23'
+  },
+  {
+    "id":"33",
+    "vendor_id":"87654",
+    "day":"2016-10-23T09:39:41.966000+00:00",
+    "total":"200",
+    "done_count":'45',
+    "closed_count":'56',
+    "file_name":'23'
+  },
+  {
+    "id":"44",
+    "vendor_id":"87654",
+    "day":"2016-10-23T09:39:41.966000+00:00",
+    "total":"200",
+    "done_count":'45',
+    "closed_count":'56',
+    "file_name":'23'
+  }
+];
+module.exports = data;

@@ -1,0 +1,44 @@
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+.editorconfig
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Typescript v1 declaration files
+typings/
+
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+#webstorm
+.idea/
+
+#屏蔽压缩包
+*.zip
+
+#屏蔽config配置文件
+config.js
+
+# 屏蔽vim 配置
+*.vimrc
+
+# 屏蔽vscode
+.vscode/

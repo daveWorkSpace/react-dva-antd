@@ -1,0 +1,1236 @@
+/**
+跟登陆注册页面相关的css 已分离至各自的页面，以下样式为公共布局样式
+aoao-style-themes 包在项目中引用仅引用 aoao-style-themes/lib/style.css 一个文件，现已全部拆分
+aoao-style-themes 已删除
+**/
+#root {
+  height: 100%;
+  width: 100%;
+}
+#root .layout-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#root .ant-btn-primary {
+  color: #fff;
+  background-color: #00CFA1;
+  border-color: #00CFA1;
+  text-align: center;
+  margin-left: 8px;
+}
+#root .list-color {
+  color: #00CFA1;
+}
+#root .theme-color {
+  color: #00CFA1;
+  padding-left: 3px;
+}
+#root .font-size-style {
+  font-size: 8px;
+}
+#root .ant-form-item {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+#root .ant-layout-sider {
+  background:rgb(50, 50, 58);
+}
+#root .ant-layout-sider.ant-layout-sider-collapsed {
+  width: 64px!important;
+  background: #282d36;
+  /*position: absolute;*/
+  /*overflow: visible;*/
+  height: 100%;
+  /*top: 0;*/
+  /*z-index: 10;*/
+  transition: all 0.3s ease;
+}
+#root .ant-layout-sider  .ant-menu-dark {
+  background: rgb(61, 61, 71);
+}
+
+/*菜单收起时的背景色
+#root .ant-layout-sider.ant-layout-sider-collapsed .ant-menu-dark {
+  background: #282d36;
+}*/
+#root .layout-header .layout-logo {
+  width: 50px;
+  height: 25px;
+  margin-bottom: 12.5px;
+  display: inline-block;
+  background: url(/images/logo@2x.png) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#root .ant-layout-sider.ant-layout-sider-collapsed  .ant-menu > .ant-menu-submenu {
+  height: 64px;
+  padding: 10px 0 0;
+  box-sizing: border-box;
+  /* 添加边框时 收起时回出现白色间隔条 */
+  /*border-bottom: 1px solid #3a3f46;*/
+  text-align: left;
+  /*border-top: 1px solid #3a3f46;*/
+}
+#root .ant-layout-sider.ant-layout-sider-collapsed .ant-menu > .ant-menu-submenu > .ant-menu-submenu-title {
+  height: 100%;
+  padding: 0!important;
+}
+#root .ant-layout-sider.ant-layout-sider-collapsed .ant-menu > .ant-menu-submenu > .ant-menu-submenu-title::after {
+  display: none;
+}
+#root .ant-layout-sider.ant-layout-sider-collapsed .ant-menu > .ant-menu-submenu > .ant-menu-submenu-title > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#root .ant-layout-sider.ant-layout-sider-collapsed .ant-menu > .ant-menu-submenu > .ant-menu-submenu-title > span .anticon {
+  display: block;
+}
+#root .ant-layout-sider.ant-layout-sider-collapsed .ant-menu > .ant-menu-submenu > .ant-menu-submenu-title > span i {
+  font-size: 20px;
+}
+
+.ant-layout-sider-collapsed .ant-menu-inline .ant-menu-submenu-title {
+  line-height: 20px!important;
+}
+
+#root .ant-layout-sider.ant-layout-sider-collapsed .ant-menu > .ant-menu-submenu > .ant-menu-submenu-title > span .title-text {
+  display: block;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+/*#root .ant-layout-sider .ant-menu > .ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: #00CFA1;
+}*/
+#root .ant-layout-sider .ant-menu > .ant-menu-item {
+  transition: all 0s ease;
+}
+#root .ant-layout-sider .ant-menu > .ant-menu-item :hover {
+  /*background: #2db7f5;*/
+  color: #fff;
+  transition: all 0s ease;
+}
+#root .layout-header {
+  background: rgb(37, 37, 43);
+  height: 50px;
+  line-height: 25px;
+  box-sizing: border-box;
+  position: relative;
+  color: #ffffff;
+  z-index: 1001;
+  padding: 0 20px;
+}
+#root .layout-header .user-box {
+  text-align: right;
+}
+#root .layout-header .user-box .ant-dropdown-link .anticon {
+  margin: 0 4px;
+}
+#root .layout-container {
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  flex-direction: row;
+}
+#root .layout-container .con-breadcrumb {
+  height: 32px;
+  width: 100%;
+  background: #f7f7f7;
+  z-index: 998;
+  box-sizing: border-box;
+  padding: 0 0 0 16px;
+  position: absolute;
+  line-height: 32px;
+}
+#root .layout-container .ant-btn-primary {
+  color: #fff;
+  background-color: #00CFA1;
+  border-color: #00CFA1;
+  text-align: center;
+  margin-left: 8px;
+}
+#root .layout-container .ant-btn {
+  margin-left: 8px;
+}
+#root .layout-container .ant-pagination-item-active {
+  background-color: #00CFA1;
+  border-color: #00CFA1;
+}
+#root .layout-container .ant-select-dropdown {
+  background-color: red;
+  border: 1px solid #00CFA1;
+  box-shadow: 0 1px 6px #00CFA1;
+  border-radius: 6px;
+  box-sizing: border-box;
+  z-index: 1050;
+  left: -9999px;
+  top: -9999px;
+  position: absolute;
+  outline: none;
+  overflow: hidden;
+  font-size: 12px;
+}
+#root .layout-container .ant-form-item-required:before {
+  display: none ;
+}
+
+#root .layout-container .con-body {
+  background: #f7f7f7;
+  width: 100%;
+  padding: 32px 16px 16px 16px;
+  height: calc(100% - 30px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#root .layout-container .con-body .ant-switch-checked {
+  background: #00CFA1;
+  border-color: #00CFA1;
+}
+#root .layout-container .con-body .form-divider-header {
+  box-sizing: content-box;
+  position: relative;
+  font-size: 12px;
+  border-bottom: 1px solid #e4e4e4;
+  height: 20px;
+  padding: 10px 10px 10px 10px;
+  width: 103%;
+  margin: -10px -29px 24px -29px;
+}
+#root .layout-container .con-body .form-divider-header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 20px;
+  background-color: #00CFA1;
+}
+#root .layout-container .con-body .main-list .bd-header {
+  padding: 10px 20px;
+}
+#root .layout-container .con-body .main-list .bd-content {
+  padding: 0 10px 10px;
+}
+#root .layout-container .con-body .bd-header {
+  margin: 0 0 16px 0;
+  background: #ffffff!important;
+  padding: 16px!important;
+  border-radius: 4px;
+}
+#root .layout-container .con-body .bd-header .ant-form > .ant-form-item {
+  margin-bottom: 16px;
+}
+#root .layout-container .con-body .bd-header .ant-form-item-control {
+  /*line-height: 38px;*/
+  position: relative;
+  zoom: 1;
+}
+#root .layout-container .con-body .bd-header .toggle-button {
+  position: absolute;
+  left: 100%;
+  top: 3px;
+  background-color: #fff;
+  border-color: #00CFA1;
+  color: #00CFA1;
+}
+#root .layout-container .con-body .bd-header .reflex {
+  text-align: right;
+  padding-right: 2%;
+}
+#root .layout-container .con-body .bd-header .reflex .reflex-button {
+  color: #00CFA1;
+  border: none;
+  background: #fff;
+  font-weight: 900;
+  font-size: 16px;
+}
+#root .layout-container .con-body .bd-header .reflex .reflex-button .ant-btn-clicked {
+  border: none ;
+}
+#root .layout-container .con-body .bd-header .ant-select-dropdown-menu-item-selected,
+#root .layout-container .con-body .bd-header .ant-select-dropdown-menu-item-selected:hover {
+  font-weight: 700;
+  color: #666;
+  background-color: #00CFA1;
+}
+#root .layout-container .con-body .bd-header .finance-img {
+  background: url(/images/finance.png) no-repeat center center;
+  background-size: 50%;
+  height: 80px;
+}
+#root .layout-container .con-body .bd-header .font-size-24 {
+  font-size: 24px;
+}
+#root .layout-container .con-body .bd-header .font-size-30 {
+  font-size: 30px;
+}
+#root .layout-container .con-body .bd-header .vertical-style.ant-col-sm-7 {
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+#root .layout-container .con-body .bd-content {
+  margin: 0 0 16px 0;
+  background: #ffffff!important;
+  padding: 16px!important;
+  overflow: hidden;
+  border-radius: 4px;
+}
+#root .layout-container .con-body .bd-content.m-margin {
+  margin: 0 0 16px 0;
+}
+
+/* 内容布局的内部样式 */
+/* 内容布局的标题样式 */
+#root .layout-container .con-body .bd-content .content-title {
+  margin: -10px 0px 10px 0px;
+  box-sizing: content-box;
+  position: relative;
+  font-size: 12px;
+  border-bottom: 1px solid #e4e4e4;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+#root .layout-container .con-body .bd-content .content-title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 20px;
+  background-color: #00CFA1;
+}
+/* 内容布局的内容样式 */
+#root .layout-container .con-body .bd-content .content {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+/* 内容布局的页脚样式 */
+#root .layout-container .con-body .bd-content .content-footer {
+  margin: 14px 0px 0px 0px;
+  box-sizing: content-box;
+  position: relative;
+  font-size: 12px;
+  border-top: 1px solid #e4e4e4;
+  height: 28px;
+  line-height: 28px;
+  padding: 10px 0px 0px 10px;
+}
+#root .layout-container .con-body .bd-content .content-search .ant-form-item {
+  margin: 0;
+}
+/* 内容布局的内容操作样式 */
+#root .layout-container .con-body .bd-content .content-operation {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+#root .layout-container .con-body .bd-content .left {
+  text-align: left;
+}
+#root .layout-container .con-body .bd-content .right {
+  text-align: right;
+}
+#root .layout-container .con-body .bd-content .center {
+  text-align: center;
+}
+
+#root .layout-container .con-body .bd-content .tooltip {
+  margin-left: 8px;
+}
+
+#root .layout-container .con-body .bd-content .check-img-list .img-con,
+#root .layout-container .con-body .bd-content .check-img-list img {
+  width: 400px;
+  height: 300px;
+}
+#root .layout-container .con-body .bd-content .check-img-list .img-con .anticon.anticon-plus {
+  opacity: 0;
+}
+#root .layout-container .con-body .bd-content .check-img-list .img-con:hover .ant-upload-drag-container {
+  background-color: rgba(222,222,222,.4);
+}
+#root .layout-container .con-body .bd-content .check-img-list .img-con:hover .anticon.anticon-plus {
+  opacity: 1;
+}
+#root .layout-container .con-body .bd-content .ant-table-tbody a {
+  color: #00CFA1;
+}
+#root .layout-container .con-body .bd-content .left-courier {
+  height: 100%;
+  padding: 10px;
+  overflow-x: hidden;
+  border: 1px solid #e9e9e9;
+  margin-right: 10px;
+}
+#root .layout-container .con-body .bd-content .right-shipment {
+  height: 100%;
+  padding: 10px 10px 10px 0;
+  border: 1px solid #e9e9e9;
+  overflow-y: hidden;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-table-row.aoao-reassign td:nth-child(2) {
+  background: url(/images/reassign.png) no-repeat 0 center;
+  background-size: 20px 20px;
+  padding-left: 20px;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper {
+  margin: 0;
+  height: 30px;
+  line-height: 26px;
+  color: #666;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-left: 1px solid #e9e9e9;
+  background: #fff;
+  padding: 3px 0;
+  text-align: center;
+  margin: 0 4px;
+  width: 11%;
+  background-color: #e9e9e9;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+  background-color: #fff ;
+  border-color: #e9e9e9;
+  border-top: none;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: none;
+  box-shadow: none;
+  z-index: 900;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper.ant-radio-button-wrapper-checked::before,
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper.ant-radio-button-wrapper-checked::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: calc(100% + 2px);
+  left: -1px;
+  box-sizing: border-box;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper.ant-radio-button-wrapper-checked::before {
+  top: 0;
+  height: 3px;
+  background-color: #00CFA1;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper.ant-radio-button-wrapper-checked::after {
+  box-sizing: border-box;
+  border-left: solid 1px #e9e9e9;
+  border-right: solid 1px #e9e9e9;
+  height: 11px;
+  top: 100%;
+  background-color: #fff;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper.ant-radio-button-wrapper-checked:first-child {
+  border-bottom: none;
+  box-shadow: 0 10px 5px #fff ;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper.ant-radio-button-wrapper:first-child {
+  border-radius: 0;
+  border-left: 1px solid #e9e9e9;
+  border-bottom: none;
+}
+#root .layout-container .con-body .bd-content .right-shipment .ant-radio-button-wrapper.ant-radio-button-wrapper:last-child {
+  border-radius: 0;
+  border-left: 1px solid #e9e9e9;
+}
+#root .layout-container .con-body .bd-content .left-area {
+  margin-right: 16px;
+}
+#root .layout-container .con-body .bd-content .left-area .left-area-top {
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#root .layout-container .con-body .bd-content .left-area .left-area-bottom {
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#root .layout-container .con-body .bd-content .right-area {
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#root .layout-container .con-body .bd-content .fixed-price {
+  background: #e4e4e4;
+}
+#root .layout-container .con-body .bd-content .ant-card-head-title {
+  text-align: center;
+}
+#root .layout-footer {
+  display: none;
+}
+#root .login-container {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/bg_login.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#root .login-container > .ant-form {
+  position: absolute;
+  padding: 20px 15px;
+  border-radius: 4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255,255,255,1);
+}
+#root .login-container > .ant-form > h2 {
+  color: #373737;
+  text-align: center;
+  padding-bottom: 15px;
+}
+#root .login-container > .ant-form .ant-btn-primary,
+#root .login-container > .ant-form .ant-btn.other {
+  display: block;
+  width: 87.5%;
+  margin: 4px auto;
+  border: none;
+}
+#root .login-container > .ant-form .account {
+  display: block;
+  width: 87.5%;
+  margin: 8px auto;
+}
+#root .login-container > .ant-form .ant-btn-primary {
+  background-color: #fc7722;
+}
+#root .login-container > .ant-form #verify_button {
+  width: 80px;
+  background: none;
+  color: #fc7722;
+  border: solid 1px #fc7722;
+}
+#root .login-container > .ant-form #verify_button:disabled {
+  color: #dedede;
+  border: solid 1px #dedede;
+}
+#root .login-header,
+#root .login-footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  background-color: rgba(3,3,3,.7);
+}
+#root .login-header > .inner,
+#root .login-footer > .inner {
+  width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+}
+#root .login-header > .inner .left,
+#root .login-footer > .inner .left {
+  float: left;
+}
+#root .login-header > .inner .right,
+#root .login-footer > .inner .right {
+  float: right;
+}
+#root .login-header > .inner a,
+#root .login-footer > .inner a {
+  color: #fff;
+}
+#root .login-header {
+  top: 0;
+  height: 50px;
+}
+#root .login-header .left {
+  height: 34px;
+  margin-top: 10px;
+  line-height: 34px;
+  padding-left: 79px;
+  background-image: url("/images/logo_txt.png");
+  background-size: 69px 34px ;
+  background-repeat: no-repeat;
+}
+#root .login-header .left span {
+  display: inline-block;
+  height: 100%;
+  border-left: solid 1px #727173;
+  padding-left: 10px;
+}
+#root .login-header .right {
+  margin-top: 15px;
+}
+#root .login-footer {
+  bottom: 0;
+  height: 120px;
+}
+#root .login-footer .left {
+  margin-top: 35px;
+}
+#root .login-footer .left li {
+  float: left;
+  margin-left: 15px;
+}
+#root .login-footer .left li h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#root .login-footer .left li a {
+  display: inline-block;
+  margin-right: 4px;
+}
+#root .login-footer .right {
+  margin-top: 14px;
+  padding-top: 44px;
+  background-image: url("/images/logo_txt.png");
+  background-size: 69px 34px ;
+  background-repeat: no-repeat;
+}
+.ant-modal .ant-modal-content .ant-modal-footer .ant-btn-primary {
+  background: #00CFA1 !important;
+  border-color: #00CFA1 !important;
+}
+.ant-popover {
+  max-width: 400px;
+}
+
+#root .ant-alert.ant-alert-warning.ant-alert-no-icon {
+    z-index: 1000;
+}
+
+/* 菜单收起的样式 start */
+.ant-layout-sider-collapsed .anticon {
+  font-size: 16px;
+  margin: 0!important;
+}
+
+.ant-layout-sider-collapsed .nav-text {
+  display: none;
+}
+
+.ant-layout-sider-collapsed div.ant-menu-submenu-title::after{
+  content: '';
+}
+
+/*菜单选中时当前icon颜色  */
+.ant-menu-submenu-selected .anticon {
+    color: #fff!important;
+}
+
+
+.ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a {
+    color: rgb(203,203,203);
+}
+
+/* 侧边栏二级菜单选中时展开选中时背景颜色 */
+#root .ant-layout-sider  .ant-menu.ant-menu-dark  .ant-menu-item.ant-menu-item-selected {
+  background-color: rgb(18, 20, 23)!important;
+}
+
+#root .ant-layout-sider .ant-menu.ant-menu-dark  .ant-menu-item:hover {
+  background-color: rgba(18, 20, 23, .6)!important;
+}
+
+/* 菜单栏选中及 hover 时的字体颜色 */
+#root .ant-layout-sider > .ant-menu.ant-menu-dark  .ant-menu-item.ant-menu-item-selected > a,
+#root .ant-layout-sider > .ant-menu.ant-menu-dark  .ant-menu-item:hover > a {
+    color: #fff;
+}
+
+
+/* 侧边栏二级菜单选中时展开选中时边框样式 */
+#root .ant-layout-sider  .ant-menu  .ant-menu-item.ant-menu-item-selected:before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+/* 服务商列表样式 */
+.accountMenu .ant-menu-vertical .ant-menu-item {
+    height: 25px!important;
+    line-height: 25px!important;
+    margin-left: 0!important;
+    left: 0!important;
+}
+
+.accountMenu .ant-menu-vertical .ant-menu-item-active {
+    background-color: #00CFA1;
+    color: #fff;
+}
+
+.accountMenu .ant-menu-horizontal .ant-menu-item-active {
+    border-color: #00CFA1;
+}
+
+.accountMenu .ant-menu-horizontal .ant-menu-item-active > a {
+    color: #00CFA1;
+}
+
+.accountMenu .ant-menu.ant-menu-vertical.ant-menu-light.ant-menu-root {
+    max-height: 100px;
+    overflow-x: inherit;
+    overflow-y: scroll;
+}
+
+.accountMenu .switchoverVendor {
+     text-indent: 16px;
+}
+
+.accountMenu .logout {
+    text-align: center;
+    cursor: default;
+}
+
+.accountMenu .logout:hover {
+    color: #00CFA1;
+}
+
+.accountMenu p {
+    height: 35px;
+    line-height: 35px;
+}
+
+.accountMenu {
+  min-width: 220px;
+}
+
+.accountMenu .ant-menu-horizontal>.ant-menu-item-selected {
+    border-color: #00CFA1;
+    color: #00CFA1;
+}
+
+/* 气泡自定义样式 */
+.ant-popover .ant-popover-arrow {
+    display: none;
+}
+
+.ant-popover  {
+    top: 50px!important;
+}
+
+.ant-popover-placement-bottom,
+.ant-popover-placement-bottomRight {
+    padding-top: 0!important;
+}
+
+.ant-popover-inner {
+  border-radius: 0;
+}
+
+
+.ant-popover .ant-menu-item.ant-menu-item-selected a,
+.ant-popover .ant-menu-item.ant-menu-item-active a:hover {
+    color: #000!important;
+
+}
+
+.helpCenter .ant-menu-item.ant-menu-item-selected,
+.helpCenter .ant-menu-item.ant-menu-item-active {
+  background: rgba(220,249,243,1);
+}
+
+/* 三级菜单栏边框样式 */
+.ant-menu-vertical {
+    border-right: none!important;
+}
+
+/* headerMenu background and hover color start */
+
+/* 顶部菜单栏颜色 */
+.businessColor {
+  background-color: rgb(245, 236, 247);
+}
+
+/* 顶部菜单栏 鼠标hover颜色 */
+.businessColor a:hover {
+  background-color: rgb(170, 76, 186)!important;
+}
+
+/* 侧边菜单栏 icon 颜色, 面包屑当前颜色 */
+.businessColorIcon,
+.businessColorCurrent {
+  color: rgb(170, 76, 186)!important;
+}
+
+/* 面包屑颜色 */
+.businessColorParent {
+  color: rgba(170, 76, 186, .6)!important;
+}
+
+/* 侧边菜单栏鼠标hover颜色 */
+.businessColorBg:hover {
+  background-color: rgb(67, 50, 80)!important;
+}
+
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .businessColorBg.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(170, 76, 186)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider .ant-menu > .businessColorBg .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(170, 76, 186);
+}
+
+/* 侧边栏三级菜单选中时及 hover时 颜色 */
+.businessColorThird .ant-menu-item-active > a,
+.businessColorThird .ant-menu-item-selected.ant-menu-item > a {
+    color: rgb(170, 76, 186);
+}
+/* 侧边栏三级菜单 选中 时背景色 */
+.businessColorThird .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(170, 76, 186, .1);
+}
+
+/* 侧边栏三级菜单 hover 时背景色 */
+.businessColorThird .ant-menu-item:hover {
+    background-color: rgb(250, 247, 240);
+    /*background-color: rgba(170, 76, 186, .05);*/
+}
+
+.userColor {
+  background-color: rgb(249, 232, 238);
+}
+
+.userColor a:hover {
+  background-color: rgb(214, 33, 97)!important;
+}
+
+.userColorIcon,
+.userColorCurrent {
+  color: rgb(214, 33, 97)!important;
+}
+
+/* 面包屑颜色 */
+.userColorParent {
+  color: rgba(214, 33, 97, .6)!important;
+}
+
+.userColorBg:hover {
+  background-color: rgb(77, 41, 61)!important;
+}
+
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .userColorBg.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(214, 33, 97)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider .ant-menu .userColorBg .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(214, 33, 97);
+}
+
+/* 侧边栏三级菜单选中时颜色 */
+.userColorThird .ant-menu-item-active > a,
+.userColorThird .ant-menu-item-selected.ant-menu-item > a {
+    color: rgb(214, 33, 97);
+}
+
+/* 侧边栏三级菜单 选中 时背景色 */
+.userColorThird .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(214, 33, 97, .1);
+}
+
+/* 侧边栏三级菜单 hover 时背景色 */
+.userColorThird .ant-menu-item:hover {
+    /* background-color: rgb(250, 247, 240); */
+    /*background-color: rgba(170, 76, 186, .05);*/
+}
+
+
+.orderColor {
+  background-color: rgb(254, 244, 233);
+}
+
+.orderColor a:hover {
+  background-color: rgb(247, 167, 56)!important;
+}
+
+.orderColorIcon,
+.orderColorCurrent {
+  color: rgb(247, 167, 56)!important;
+}
+
+/* 面包屑颜色 */
+.orderColorParent {
+  color: rgba(247, 167, 56, .6)!important;
+}
+
+.orderColorBg:hover {
+  background-color: rgb(83, 70, 51)!important;
+}
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .orderColorBg.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(247, 167, 56)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider  .ant-menu > .orderColorBg .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(247, 167, 56);
+}
+
+/* 侧边栏三级菜单选中时颜色 */
+.orderColorThird .ant-menu-item-active > a,
+.orderColorThird .ant-menu-item-selected.ant-menu-item > a {
+    color: rgb(247, 167, 56);
+}
+
+/* 侧边栏三级菜单 选中 时背景色 */
+.orderColorThird .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(247, 167, 56, .1);
+}
+
+/*分拨管理  */
+.dispatcherColor {
+  background-color: rgba(139, 149, 255, .1);
+}
+
+.dispatcherColor a:hover {
+  background-color: rgb(139, 149, 255)!important;
+}
+
+.dispatcherColorIcon,
+.dispatcherColorCurrent {
+  color: rgb(139, 149, 255)!important;
+}
+
+/* 面包屑颜色 */
+.dispatcherColorParent {
+  color: rgba(139, 149, 255, .6)!important;
+}
+
+.dispatcherColorBg:hover {
+  background-color: rgba(139, 149, 255, .2)!important;
+}
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .dispatcherColorBg.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(139, 149, 255)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider  .ant-menu > .dispatcherColorBg .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(139, 149, 255);
+}
+
+/* 侧边栏三级菜单选中时颜色 */
+.dispatcherColorThird .ant-menu-item-active > a,
+.dispatcherColorThird .ant-menu-item-selected.ant-menu-item > a {
+    color: rgb(139, 149, 255);
+}
+
+/* 侧边栏三级菜单 选中 时背景色 */
+.dispatcherColorThird .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(139, 149, 255, .1);
+}
+
+.operateColor {
+  background-color: rgb(235, 241, 236);
+}
+
+.operateColor a:hover {
+  background-color: rgb(64, 122, 71)!important;
+}
+
+.operateColorIcon,
+.operateColorCurrent {
+  color: rgb(64, 122, 71)!important;
+}
+
+/* 面包屑颜色 */
+.operateColorParent {
+  color: rgba(64, 122, 71, .6)!important;
+}
+
+.operateColorBg:hover {
+  background-color: rgb(42, 61, 57)!important;
+}
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .operateColorBg.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(64, 122, 71)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider  .ant-menu > .operateColorBg .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(64, 122, 71);
+}
+
+/* 侧边栏三级菜单选中时颜色 */
+.operateColorThird .ant-menu-item-active > a,
+.operateColorThird .ant-menu-item-selected.ant-menu-item > a {
+    color: rgb(64, 122, 71);
+}
+
+/* 侧边栏三级菜单 选中 时背景色 */
+.operateColorThird .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(64, 122, 71, .1);
+}
+
+.dataColor {
+  background-color: rgb(232, 239, 244);
+}
+
+.dataColor a:hover {
+  background-color: rgb(40, 138, 226)!important;
+}
+
+.dataColorIcon,
+.dataColorCurrent {
+  color: rgb(40, 138, 226)!important;
+}
+
+/* 面包屑颜色 */
+.dataColorParent {
+  color: rgba(40, 138, 226, .6)!important;
+}
+
+.dataColorBg:hover {
+  background-color: rgb(33, 63, 88)!important;
+}
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .dataColorBg.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(40, 138, 226)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider  .ant-menu > .dataColorBg .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(40, 138, 226);
+}
+
+/* 侧边栏三级菜单选中时颜色 */
+.dataColorThird .ant-menu-item-active > a,
+.dataColorThird .ant-menu-item-selected.ant-menu-item > a {
+    color: rgb(40, 138, 226);
+}
+
+/* 侧边栏三级菜单 选中 时背景色 */
+.dataColorThird .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(40, 138, 226, .1);
+}
+
+.financeColor {
+  background-color: rgb(255, 238, 232);
+}
+
+.financeColor a:hover {
+  background-color: rgb(252, 88, 48)!important;
+}
+
+.financeColorIcon,
+.financeColorCurrent {
+  color: rgb(252, 88, 48)!important;
+}
+
+/* 面包屑颜色 */
+.financeColorParent {
+  color: rgba(252, 88, 48, .6)!important;
+}
+
+.financeColorBg:hover {
+  background-color: rgb(85, 53, 51)!important;
+}
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .financeColorBg.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(252, 88, 48)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider  .ant-menu > .financeColorBg .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(252, 88, 48);
+}
+
+/* 侧边栏三级菜单选中时颜色 */
+.financeColorThird .ant-menu-item-active > a,
+.financeColorThird .ant-menu-item-selected.ant-menu-item > a {
+    color: rgb(252, 88, 48);
+}
+
+/* 侧边栏三级菜单 选中 时背景色 */
+.financeColorThird .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(252, 88, 48, .1);
+}
+
+.personageColor {
+  background-color: rgb(248, 248, 249);
+}
+
+.personageColor a:hover {
+  background-color: #E6E6E6!important;
+}
+
+.personageColorIcon {
+  color: #E6E6E6;
+}
+
+/* 需变更 */
+.personageColorBg:hover {
+  background-color: #E6E6E6!important;
+}
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .personageColor.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(214, 33, 97)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider  .ant-menu > .personageColor .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(214, 33, 97);
+}
+
+/* 侧边栏三级菜单 选中 时背景色 */
+.personageColorBg .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(214, 33, 97, .1);
+}
+
+.helpColor {
+  background-color: rgb(248, 248, 249);
+}
+
+.helpColor a:hover {
+  background-color: rgba(155,155,155,1)!important;
+}
+
+.helpColorIcon {
+  color: #E6E6E6;
+}
+
+.helpColorBg:hover {
+  background-color: rgba(155,155,155,1)!important;
+}
+/* 侧边菜单栏一级菜单选中颜色 */
+#root .ant-layout-sider .ant-menu > .helpColor.ant-menu-submenu.ant-menu-submenu-selected {
+  background-color: rgb(214, 33, 97)!important;
+}
+
+/* 侧边栏二级菜单选中时展开选中时边框颜色 */
+#root .ant-layout-sider  .ant-menu > .helpColor .ant-menu-item.ant-menu-item-selected:before {
+    border-left: 3px solid rgb(214, 33, 97);
+}
+
+/* 侧边栏三级菜单 选中 时背景色 */
+.helpColorBg .ant-menu-item-selected.ant-menu-item {
+    background-color: rgba(214, 33, 97, .1);
+}
+
+#root .ant-breadcrumb-link a {
+    text-decoration: none!important;
+}
+
+#root #aoao-app-qrcode .qrcodeDesc {
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.idCard .ant-form-item-label {
+  text-align: left!important;
+}
+
+/* 菜单提示 */
+.shadeNotition .notition1 {
+  width: 462px;
+  height: 288px;
+  top: 0;
+  right: 8px;
+  background-image: url("/images/personal-center@2x.png");
+}
+
+.shadeNotition .notition2 {
+  width: 391px;
+  height: 171px;
+  top: 0;
+  right: 87px;
+  background-image: url("/images/help-center@2x.png");
+}
+
+.shadeNotition .notition3 {
+  width: 437px;
+  height: 169px;
+  top: 122px;
+  left: 0px;
+  background-image: url("/images/user-s@2x.png");
+}
+
+.shadeNotition .notition4 {
+  width: 484px;
+  height: 244px;
+  top: 164px;
+  left: 0px;
+  background-image: url("/images/order-s@2x.png");
+}
+
+.shadeNotition .notition5 {
+  width: 420px;
+  height: 142px;
+  top: 206px;
+  left: 0px;
+  background-image: url("/images/o-center@2x.png");
+}
+
+/* 订单查询中 日期选择器 placeHolder 样式 */
+.ant-calendar-picker .ant-calendar-picker-input .ant-calendar-range-picker-input:nth-child(1) {
+  text-align: left!important;
+}
+
+/* 配送区域管理 tabs 样式 */
+.ant-tabs-nav .ant-tabs-tab:hover,
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: #00CFA1;
+}
+
+.ant-tabs-ink-bar {
+  background-color: #00CFA1!important;
+}
+
+/* 分拨管理 到站收货 */
+
+.cargoNumber .ant-card-body {
+  margin: auto;
+}
+
+/* 站点操作中 search  日期选择框  */
+.ant-row.ant-form-item.station-date .ant-calendar-picker {
+  width: 100%!important;
+}
+
+/* 站点操作中 header 组件中 pop组件 下标箭头 */
+/*.history-tooltip .ant-tooltip-arrow {
+  display: none;
+}*/
+
+
+.operateBox {
+    display: flex;
+}
+
+.operateBox p {
+    cursor: default;
+}
+
+/* 项目管理查看申请合作商家 圆点位置 */
+.apply-cooperation-count .ant-badge-count {
+    right: 0;
+}
+
+.rules-body {
+    padding-top: 16px!important;
+}
+
+/*站点操作 异常列样式  */
+.stockErrorStyle {
+  color: red;
+}

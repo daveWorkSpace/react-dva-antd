@@ -1,0 +1,59 @@
+project
+├── affiliate                           加盟项目
+│   ├── historyProject.jsx              历史项目模块
+│   ├── index.jsx
+│   └── operate                         加盟项目操作入口文件
+│       ├── index.jsx
+│       ├── knightRules.jsx             骑士分单规则文件
+│       └── sellerInfo.jsx              商家信息模块
+├── core
+│   ├── basic.jsx
+│   ├── enumerate.js                    枚举文件
+│   ├── knightRulesContent.jsx          骑士分单规则主体文件
+│   ├── knightRulesList.jsx             骑士分单规则列表
+│   ├── rulesSlide.jsx                  分单规则左边栏
+│   ├── search.jsx                      公用搜索模块
+│   ├── shop.jsx                        商铺列表模块
+│   ├── style.less
+│   ├── subSearch.jsx                   添加新项目 及 历史合作项目搜索模块
+│   ├── subTable.jsx                    添加新项目 及 历史合作项目列表模块
+│   └── table.jsx                       公用列表模块
+├── direct                              直营项目
+│   ├── addProject.jsx                  添加新项目模块
+│   ├── historyProject.jsx              历史项目模块
+│   ├── index.jsx
+│   └── operate                         直营项目操作入口文件
+│       ├── concatDelivery.jsx          关联配送站模块
+│       ├── index.jsx
+│       ├── knightRules.jsx             骑士分单规则模块
+│       ├── orderRules.jsx              订单分单规则模块
+│       ├── orderRulesContent.jsx       订单分单规则主体文件
+│       ├── orderRulesList.jsx          订单分单规则列表
+│       ├── project.js
+│       ├── sellerInfo.jsx              商家信息模块
+│       ├── signEdit.jsx                签约编辑模块
+│       ├── signInfo.jsx                签约信息模块
+│       ├── signed.jsx
+│       └── transferStock.jsx           中转仓模块
+└── style.less
+
+supplier                                承运商模块
+├── addSupplier.jsx                     添加承运商模块
+├── areaService.jsx                     区域承运表模块
+├── core
+│   └── enumerate.js                    枚举文件
+├── index.jsx
+├── operate                             承运商操作文件入口
+│   ├── addArea.jsx                     添加区域模块
+│   ├── addStock.jsx                    合作仓库模块
+│   ├── area.jsx                        合作区域模块
+│   ├── areaHeader.jsx                  合作区域模块顶部搜索模块
+│   ├── areaTable.jsx                   合作区域模块展示表单模块
+│   ├── details.jsx                     承运商信息模块
+│   ├── index.jsx
+│   ├── project.jsx                     承运商列表模块
+│   └── stock.jsx                       仓库列表
+├── search.jsx                          承运商列表查询模块
+├── stockService.jsx                    仓库承运表模块
+├── style.less
+└── table.jsx                           展示列表模块

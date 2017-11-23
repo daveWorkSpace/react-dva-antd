@@ -1,0 +1,31 @@
+.listComponent .createSubAreaRow {
+  background-color: #FBFBFB;
+}
+.listComponent .link {
+  color: #00CFA1;
+  cursor: pointer;
+}
+.listComponent .link:hover {
+  cursor: hand;
+}
+.listComponent .createSubAreaLink {
+  color: #00CFA1;
+  cursor: pointer;
+  margin-left: 33px;
+}
+.listComponent .createSubAreaLink:hover {
+  cursor: hand;
+}
+.component .center {
+  padding-top: 17%;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.component .height100 {
+  height: 100%;
+}
+.component .width100 {
+  width: 100%;
+}
